@@ -11,12 +11,19 @@
     <h2 class="headline text-xl font-semibold bg-[#157515] flex justify-center">Module : 26</h2>
 <!-- -------------- Note -------------- -->
     <section class="add_event">
-        <h3 class="text-xl font-semibold">input er value ta pawar steps -- ></h3>
+        <h3 class="text-xl font-semibold">React set up er steps -- ></h3>
         <ul>
-          <li>1. get the base value. </li>
-          <li>2. Access the input field . <br>   <span class="highlighted">const triangleBaseInput = document.getElementById('triangle-base');</span></li>
-          <li>3. get value from the input field. <br><span class="highlighted">ex : const triangleBaseText = triangleBaseInput.value;</span></li>
-          <li>4. Convert the value to a number. <br><span class="highlighted">ex : const base = parseFloat(triangleBaseText);</span></li>
+          <li>1. Go to "Commant prompt". </li>
+
+          <li>2. got to the forlder with commant prompt where you want to create the react folder . <br>   <span class="highlighted"> cd \folder-name</span></li>
+
+          <li>3. in a browser --> Vite -->Getting started --> copy a link of 'npm 7' --> back to the command prompt --> paste the link --> edit - <br><span class="highlighted">npm create vite@latest your-folder-name -- --template react</span></li>
+
+          <li>4. You will rcv 3 command  <br> ---(a) cd your-folder-name <br>---(b) npm install <br>---(c) npm run dev </li>
+
+          <li>6. instead of entering (c) you can also go to terminal and enter <span class="highlighted">npm run dev</span>"</li>
+
+          <li>7. then yo will get a link . --> press 'Alt' button then click the link</li>
       </ul> 
     </section>
     
@@ -35,7 +42,14 @@
         for(span of spans)
         {
             span.style.fontSize = '18px';
-            span.style.color = 'Crimson';
+            span.style.color = 'Red';
+        }
+
+        const highlighteds = document.getElementsByClassName('highlighted');
+        for(highlighted of highlighteds)
+        {
+            highlighted.style.fontSize = '16px';
+            highlighted.style.color = 'Crimson';
         }
        </script>
 </body>
