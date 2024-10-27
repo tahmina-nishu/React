@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module-38 Note</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h2 class="headline text-xl font-semibold bg-[#157515] flex justify-center">Module : 26</h2>
+<!-- -------------- Note -------------- -->
+    <section class="add_event">
+        <h3 class="text-xl font-semibold">input er value ta pawar steps -- ></h3>
+        <ul>
+          <li>1. get the base value. </li>
+          <li>2. Access the input field . <br>   <span class="highlighted">const triangleBaseInput = document.getElementById('triangle-base');</span></li>
+          <li>3. get value from the input field. <br><span class="highlighted">ex : const triangleBaseText = triangleBaseInput.value;</span></li>
+          <li>4. Convert the value to a number. <br><span class="highlighted">ex : const base = parseFloat(triangleBaseText);</span></li>
+      </ul> 
+    </section>
+    
+    <!-- Note er script  -->
+    <script>
+        const events = document.querySelectorAll('section');
+        for(item of events)
+        {
+            item.style.backgroundColor = "lavender";
+            item.style.borderRadius = "10px";
+            item.style.padding = "10px";
+            item.style.margin = "10px";
+        }
+  
+        const spans = document.getElementsByClassName('red-text');
+        for(span of spans)
+        {
+            span.style.fontSize = '18px';
+            span.style.color = 'Crimson';
+        }
+       </script>
+</body>
+</html>
